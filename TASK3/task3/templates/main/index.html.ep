@@ -1,0 +1,5 @@
+<h2>Welcome to my login system!</h2>
+<p>
+	%= link_to login => 'login_form'
+	%= link_to register => 'register_form'
+</p>

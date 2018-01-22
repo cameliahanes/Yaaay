@@ -1,0 +1,22 @@
+%= form_for 'do_update' => (method => 'POST') => begin
+	<h2>Accounts</h2>
+
+<p>
+	%= label_for infoarena => 'Infoarena: '
+	%= text_field 'infoarena' => $self->session->{ia_username}
+</p>
+<p>
+	%= label_for codeforces => 'Codeforces: '
+	%= text_field 'codeforces' => $self->session->{cf_username};
+</p>
+<p>
+	%= label_for csacademy => 'CSacademy: '
+	%= text_field 'csacademy' => $self->session->{cs_username};
+</p>
+<p>
+	%= label_for atcoder => 'AtCoder: '
+	%= text_field 'atcoder' => $self->session->{ac_username};
+</p>
+
+	%= submit_button 'Update', class => 'btn'
+% end

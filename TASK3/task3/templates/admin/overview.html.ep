@@ -1,0 +1,9 @@
+<h2>Restricted area</h2>
+% title '';
+
+Here you can see your accounts and make changes</h2>
+
+%= link_to "View accounts" => 'view_accounts'
+<br>
+%= link_to "Log out" => 'do_logout'
+
